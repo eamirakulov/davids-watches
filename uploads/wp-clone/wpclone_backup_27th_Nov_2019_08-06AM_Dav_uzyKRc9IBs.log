@@ -1,0 +1,15 @@
+Wednesday, 27-Nov-2019 08:06:29 - backup started
+Wednesday, 27-Nov-2019 08:06:29 - wp version     : 5.3
+Wednesday, 27-Nov-2019 08:06:29 - php version    : 7.1.19
+Wednesday, 27-Nov-2019 08:06:29 - mysql version  : 5.7.13
+Wednesday, 27-Nov-2019 08:06:29 - memory limit   : 1024M
+Wednesday, 27-Nov-2019 08:06:29 - execution time : 600
+Wednesday, 27-Nov-2019 08:06:29 - mysql timeout  : 
+Wednesday, 27-Nov-2019 08:06:29 - socket timeout : 600
+Wednesday, 27-Nov-2019 08:06:29 - database only backup, no files will be copied
+Wednesday, 27-Nov-2019 08:06:29 - database backup started
+Wednesday, 27-Nov-2019 08:06:29 - backing up tables with "wp_" prefix
+Wednesday, 27-Nov-2019 08:06:29 - number of tables to backup - 43
+Wednesday, 27-Nov-2019 08:06:29 - database backup finished
+Wednesday, 27-Nov-2019 08:06:29 - archiving files using ziparchive
+Wednesday, 27-Nov-2019 08:06:29 - backup finished
