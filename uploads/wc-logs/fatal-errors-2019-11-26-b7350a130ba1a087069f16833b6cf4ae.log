@@ -1,0 +1,10 @@
+2019-11-26T06:46:19+00:00 CRITICAL Object of class WP_Error could not be converted to string in /Users/emil/projects/watches/wp-content/themes/dw/page-home.php on line 56
+
+2019-11-26T07:55:31+00:00 CRITICAL Uncaught Error: Call to undefined function do_rms_activation_task() in /Users/emil/projects/watches/wp-content/plugins/woocommerce-product-search/rms-script-ini.php:127
+Stack trace:
+#0 /Users/emil/projects/watches/wp-content/plugins/woocommerce-product-search/woocommerce-product-search.php(32): require_once()
+#1 /Users/emil/projects/watches/wp-admin/includes/plugin.php(650): include_once('/Users/emil/pro...')
+#2 /Users/emil/projects/watches/wp-admin/plugins.php(44): activate_plugin('woocommerce-pro...', 'http://localhos...', false)
+#3 {main}
+  thrown in /Users/emil/projects/watches/wp-content/plugins/woocommerce-product-search/rms-script-ini.php on line 127
+
