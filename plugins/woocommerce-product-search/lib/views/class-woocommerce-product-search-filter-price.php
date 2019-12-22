@@ -323,7 +323,7 @@ class WooCommerce_Product_Search_Filter_Price {
 		}
 
 		$output .= sprintf(
-			'<form id="%s" class="product-search-filter-price-form" action="%s" method="get">',
+			'<div class="filter-search-drop"><form id="%s" class="product-search-filter-price-form" action="%s" method="get">',
 			esc_attr( $form_id ),
 			esc_url( $href )
 		);
@@ -413,7 +413,7 @@ class WooCommerce_Product_Search_Filter_Price {
 			$output .= '</span>';
 		}
 		$output .= wc_query_string_form_fields( null, array( 'ixwpsp', 'min_price', 'max_price', 'submit', 'paged', 'product-page' ), '', true );
-		$output .= '</form>';
+		$output .= '</form></div>';
 
 		$output .= apply_filters(
 			'woocommerce_product_search_filter_price_suffix',

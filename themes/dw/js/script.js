@@ -168,12 +168,37 @@ $(function(){
 
 		if(btn.hasClass('active')){
 			btn.removeClass('active')
-			drop.stop(true,true).slideUp(200)
+			drop.stop(true,true).slideUp(300)
 		}else{
 			btn.addClass('active')
-			drop.stop(true,true).slideDown(200)
+			drop.stop(true,true).slideDown(300)
 		}
 	})
 
 	new WOW().init();
+
+	$(".product-search-filter-terms-heading").on('click', function(){
+		var btn = $(this),
+			drop = btn.closest(".product-search-filter-terms").find(".selectize-control");
+
+		if(btn.hasClass('active')){
+			btn.removeClass('active')
+			drop.removeClass('active')
+		}else{
+			btn.addClass('active')
+			drop.addClass('active')
+		}
+	})
+
+	$(document).mouseup(function (e){
+		var block = $(".selectize-control");
+		if($(window).width() > 1050){
+			if (!block.is(e.target)
+				&& block.has(e.target).length === 0) {
+				block.removeClass('active')
+				$(".product-search-filter-terms-heading").removeClass('active')
+			}
+		}
+		
+	});
 })

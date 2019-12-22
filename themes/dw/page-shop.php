@@ -52,20 +52,27 @@
 					</ul>
 				</div>
 
-
-				<?php echo do_shortcode( '[woocommerce_product_filter_price delay="1000"]' ); ?>
-				<?php echo do_shortcode( '[woocommerce_product_filter_attribute attribute="color" style="dropdown" show_thumbnails="no"]' ); ?>
-				<?php echo do_shortcode( '[woocommerce_product_filter_attribute attribute="diameter" style="dropdown" show_thumbnails="no"]' ); ?>
-				<?php echo do_shortcode( '[woocommerce_product_filter_attribute attribute="box-papers" style="dropdown" show_thumbnails="no"]' ); ?>
-				<?php echo do_shortcode( '[woocommerce_product_filter_attribute attribute="bracelet" style="dropdown" show_thumbnails="no"]' ); ?>
-				<?php echo do_shortcode( '[woocommerce_product_filter_attribute attribute="condition" style="dropdown" show_thumbnails="no"]' ); ?>
-				<?php echo do_shortcode( '[woocommerce_product_filter_attribute attribute="gender" style="dropdown" show_thumbnails="no"] ' ); ?>
-				<?php echo do_shortcode( '[woocommerce_product_filter_attribute attribute="metal-type" style="dropdown" show_thumbnails="no"]' ); ?>
-				<?php echo do_shortcode( '[woocommerce_product_filter_attribute attribute="production-year" style="dropdown" show_thumbnails="no"]' ); ?>
-
-				<div class="catalog">
-					<div class="row clearfix">
-						<?php echo do_shortcode( '[woocommerce_product_filter_products]' ); ?>
+				<div class="clearfix">
+					<div class="catalog-sort__filter clearfix">
+						<a href="#" class="filter-btn">
+							<i class="filter-icon"></i> Фильтр
+						</a>
+						<div class="catalog-sort__filter-drop">
+							<?php echo do_shortcode( '[woocommerce_product_filter_price delay="1000"]' ); ?>
+							<?php echo do_shortcode( '[woocommerce_product_filter_attribute attribute="color" style="dropdown" show_thumbnails="no"]' ); ?>
+							<?php echo do_shortcode( '[woocommerce_product_filter_attribute attribute="diameter" style="dropdown" show_thumbnails="no"]' ); ?>
+							<?php echo do_shortcode( '[woocommerce_product_filter_attribute attribute="box-papers" style="dropdown" show_thumbnails="no"]' ); ?>
+							<?php echo do_shortcode( '[woocommerce_product_filter_attribute attribute="bracelet" style="dropdown" show_thumbnails="no"]' ); ?>
+							<?php echo do_shortcode( '[woocommerce_product_filter_attribute attribute="condition" style="dropdown" show_thumbnails="no"]' ); ?>
+							<?php echo do_shortcode( '[woocommerce_product_filter_attribute attribute="gender" style="dropdown" show_thumbnails="no"] ' ); ?>
+							<?php echo do_shortcode( '[woocommerce_product_filter_attribute attribute="metal-type" style="dropdown" show_thumbnails="no"]' ); ?>
+							<?php echo do_shortcode( '[woocommerce_product_filter_attribute attribute="production-year" style="dropdown" show_thumbnails="no"]' ); ?>
+						</div>
+					</div>
+					<div class="catalog">
+						<div class="row clearfix">
+							<?php echo do_shortcode( '[woocommerce_product_filter_products]' ); ?>
+						</div>
 					</div>
 				</div>
 			</div>
