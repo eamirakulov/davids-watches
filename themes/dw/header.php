@@ -27,20 +27,17 @@
 	<?php if(is_page('home') || isset( $wp_query ) && (bool) $wp_query->is_posts_page) : ?>
 	<section class="section1">
 		<header class="header">
+			<div class="logo">
+				<a href="<?php bloginfo('url'); ?>">
+					<img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="" width="90" class="">
+				</a>
+			</div>
 			<div class="header-toggle">
 				<ul class="navigation">
 					<li><a href="<?php bloginfo('url'); ?>/buy-a-rolex">Buy a Rolex</a></li>
-					<li><a href="<?php bloginfo('url'); ?>/sell-a-rolex">Sell a Rolex</a></li>
-					<li><a href="<?php bloginfo('url'); ?>/about">About</a></li>
-					<li><a href="<?php bloginfo('url'); ?>/buying-shipping">Buying & Shipping</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/contact">Contact us</a></li>
 					<li><a href="<?php bloginfo('url'); ?>/faq">FAQ</a></li>
 				</ul>
-				<div class="logo">
-					<a href="<?php bloginfo('url'); ?>">
-						<img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="" width="135px" class="sm-hide">
-						<img src="<?php bloginfo('template_url'); ?>/images/logo2.png" alt="" width="70px" class="sm-visible">
-					</a>
-				</div>
 				<div class="h-soc">
 					<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/fb-icon.png" alt=""></a>
 					<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/inst-icon.png" alt=""></a>
@@ -48,36 +45,63 @@
 			</div>
 			<a href="#" class="menu-btn"><span class="button-stik"></span></a>
 		</header>
+
 		<div class="container">
 			<div>
-				<div class="s1-title wow fadeInDown" data-wow-delay="0.2s">
-					ROLEX EXCHANGE
-					<span class="wow fadeInDown" data-wow-delay="0.4s">THE PRE-OWNED ROLEX EXCHANGE</span>
+				<div class="s1-title">
+					<div class="s1-title__photo">
+						<img src="<?php bloginfo('template_url'); ?>/sources/photo1.png" alt="">
+					</div>
+					<div class="s1-title__text">
+						Hey, Im David
+					</div>
 				</div>
-				<div class="s1-btns">
-					<a href="#" class="button1 wow fadeInDown" data-wow-delay="0.8s">BUY A ROLEX</a>
-					<a href="#" class="button1 wow fadeInDown" data-wow-delay="1s">SELL A ROLEX</a>
+				<div class="s1-text">
+					<p>Привет, я Дэвид основатель компании и мои партнеры «имена». № года назад из нашей страсти к лакшери часам, мы сделали бизнес. На этой странице вы найдете часы отобранные лично нами, которые по нашему мнению являются лучшим предложением достойным наших пользователей.</p>
+
+					<p>Все сделки и любые вопросы решаются лично мной и моими партнерами, чтобы процесс изучения и приобретения был для вас максимально понятным и прозрачным.</p>
+				</div>
+				<div class="s1-team">
+					<div class="s1-team__item">
+						<div class="s1-team__img">
+							<img src="<?php bloginfo('template_url'); ?>/sources/photo2.png" alt="">
+						</div>
+						<div class="s1-team__text">
+							<span>Brian</span>
+							Watch master 
+						</div>
+					</div>
+					<div class="s1-team__item">
+						<div class="s1-team__img">
+							<img src="<?php bloginfo('template_url'); ?>/sources/photo3.png" alt="">
+						</div>
+						<div class="s1-team__text">
+							<span>Brian</span>
+							Watch master 
+						</div>
+					</div>
 				</div>
 			</div>
+			<a href="#section2" class="s1-down">Go to Watches</a>
+			<a class="s1-btn" href="https://wa.me/996700396117" target="_blank">Ask me a questions</a>
 		</div>
 		<?php else : ?>
+		
 		<header class="header header-fluid">
+			<div class="logo">
+				<a href="<?php bloginfo('url'); ?>">
+					<img src="<?php bloginfo('template_url'); ?>/images/logo2.png" alt="" width="90" class="">
+				</a>
+			</div>
 			<div class="header-toggle">
 				<ul class="navigation">
 					<li><a href="<?php bloginfo('url'); ?>/buy-a-rolex">Buy a Rolex</a></li>
-					<li><a href="<?php bloginfo('url'); ?>/sell-a-rolex">Sell a Rolex</a></li>
-					<li><a href="<?php bloginfo('url'); ?>/about">About</a></li>
-					<li><a href="<?php bloginfo('url'); ?>/buying-shipping">Buying & Shipping</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/contact">Contact us</a></li>
 					<li><a href="<?php bloginfo('url'); ?>/faq">FAQ</a></li>
 				</ul>
-				<div class="logo">
-					<a href="<?php bloginfo('url'); ?>">
-						<img src="<?php bloginfo('template_url'); ?>/images/logo2.png" alt="" width="70px">
-					</a>
-				</div>
 				<div class="h-soc">
-					<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/fb-icon2.png" alt=""></a>
-					<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/inst-icon2.png" alt=""></a>
+					<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/fb-icon.png" alt=""></a>
+					<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/inst-icon.png" alt=""></a>
 				</div>
 			</div>
 			<a href="#" class="menu-btn"><span class="button-stik"></span></a>

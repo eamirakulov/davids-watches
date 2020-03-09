@@ -127,6 +127,12 @@
 	<script src='<?php bloginfo('template_url'); ?>/js/jquery.waypoints.min.js'></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/wow.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.section1').parallax({imageSrc: "<?php bloginfo('template_url'); ?>/images/MainRollex_2.jpg"});
+		});
+	</script>
 	<?php wp_footer(); ?>
 </body>
 </html>

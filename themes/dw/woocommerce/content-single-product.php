@@ -46,16 +46,6 @@ if ( post_password_required() ) {
 						        
 						    <?php endforeach; ?>
 					</ul>
-					<ul class="product-modal__nav">
-						<?php
-						    $attachment_ids = $product->get_gallery_image_ids();
-						    foreach( $attachment_ids as $attachment_id ) : ?>
-								<li>
-									<img src="<?php echo wp_get_attachment_url( $attachment_id ); ?>" alt="">
-								</li>
-						        
-						    <?php endforeach; ?>
-					</ul>
 				</div>
 				<div class="product-modal__desc">
 					<div class="product-modal__title">
@@ -81,12 +71,93 @@ if ( post_password_required() ) {
 						<p><?php echo $product->get_sku(); ?> | <?php echo $product->get_attribute( 'pa_color' ); ?>, <?php echo $product->get_attribute( 'pa_diameter' ); ?>, <?php echo $product->get_attribute( 'pa_production-year' ); ?> |</p>
 						<p><?php echo $product->get_description(); ?></p>
 					</div>
+					<div class="product-modal__contacts">
+						<div>
+							<a href="tel:123456789"><i class="phone-icon"></i></a>
+						</div>
+						<div>
+							<a href="mailto:mail@mail.com"><i class="mail-icon"></i></a>
+						</div>
+						<div>
+							<a href="https://wa.me/996700396117" target="_blank"><i class="wa-icon"></i></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	
-	<?php get_template_part('reviews'); ?>
+	<section class="section3">
+			<div class="container">
+				<div class="block-title" data-text="REVIEWS">
+					<span>
+						Read what <br>
+						our customers <br>
+						things about us
+					</span>
+				</div>
+			</div>
+			<div class="reviews">
+				<ul class="reviews-slider owl-carousel">
+					<li>
+						<div class="reviews-item clearfix">
+							<div class="reviews-item__img">
+								<img src="<?php bloginfo('template_url'); ?>/sources/photo4.png" alt="">
+							</div>
+							<div class="reviews-item__text">
+								<div class="reviews-item__author">
+									<span>David Braun</span>
+									Bought Rolex Daytona
+								</div>
+								<p>Guys know their stuff! Well versed in watches. This is my first Rolex watch. And the guys helped me make the right choice, which I was very pleased with.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="reviews-item clearfix">
+							<div class="reviews-item__img">
+								<img src="<?php bloginfo('template_url'); ?>/sources/photo4.png" alt="">
+							</div>
+							<div class="reviews-item__text">
+								<div class="reviews-item__author">
+									<span>David Braun</span>
+									Bought Rolex Daytona
+								</div>
+								<p>Guys know their stuff! Well versed in watches. This is my first Rolex watch. And the guys helped me make the right choice, which I was very pleased with.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="reviews-item clearfix">
+							<div class="reviews-item__img">
+								<img src="<?php bloginfo('template_url'); ?>/sources/photo4.png" alt="">
+							</div>
+							<div class="reviews-item__text">
+								<div class="reviews-item__author">
+									<span>David Braun</span>
+									Bought Rolex Daytona
+								</div>
+								<p>Guys know their stuff! Well versed in watches. This is my first Rolex watch. And the guys helped me make the right choice, which I was very pleased with.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="reviews-item clearfix">
+							<div class="reviews-item__img">
+								<img src="<?php bloginfo('template_url'); ?>/sources/photo4.png" alt="">
+							</div>
+							<div class="reviews-item__text">
+								<div class="reviews-item__author">
+									<span>David Braun</span>
+									Bought Rolex Daytona
+								</div>
+								<p>Guys know their stuff! Well versed in watches. This is my first Rolex watch. And the guys helped me make the right choice, which I was very pleased with.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+	</section>
+
 	<div class="container">
 		<div class="articles-widget">
 			<div class="row clearfix">

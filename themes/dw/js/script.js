@@ -1,5 +1,4 @@
 $(function(){
-	$('.section1').parallax({imageSrc: "images/MainRollex_2.jpg"});
 	$(".reviews-slider").owlCarousel({
 		loop:true,
 		items:1,
@@ -57,19 +56,8 @@ $(function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
-		fade: true,
-		asNavFor: '.product-modal__nav'
+		dots: true
 	});
-
-	$(".product-modal__nav").slick({
-			slidesToShow: 3,
-			slidesToScroll: 1,
-			dots: false,
-			centerMode: true,
-			focusOnSelect: true,
-			asNavFor: '.product-modal__list'
-	});
-	
 
 	$(".product-modal__close").on('click', function(){
 		var modal = $(this).closest('.product-modal').fadeOut()
@@ -149,7 +137,8 @@ $(function(){
 		}
 	});
 
-	$(".menu-btn").on('click', function(){
+	$(".menu-btn").on('click', function(e){
+		e.preventDefault();
 		var btn = $(this),
 			menu = $(".header-toggle");
 
@@ -175,14 +164,18 @@ $(function(){
 		}
 	})
 
+<<<<<<< HEAD
 	new WOW().init();
 
+=======
+>>>>>>> Adj march
 	$(".product-search-filter-terms-heading").on('click', function(){
 		var btn = $(this),
 			drop = btn.closest(".product-search-filter-terms").find(".selectize-control");
 
 		if(btn.hasClass('active')){
 			btn.removeClass('active')
+<<<<<<< HEAD
 			drop.removeClass('active')
 		}else{
 			btn.addClass('active')
@@ -200,5 +193,40 @@ $(function(){
 			}
 		}
 		
+=======
+			drop.stop(true,true).slideUp(200)
+		}else{
+			btn.addClass('active')
+			drop.stop(true,true).slideDown(200)
+		}
+	})
+
+	$(".quesion-item").on('click', function(){
+		var btn = $(this),
+			drop = $(this).find(".quesion-item__hidden")
+		if(btn.hasClass('active')){
+			btn.removeClass('active')
+			drop.hide(300)
+		}else{
+			btn.addClass('active')
+			drop.show(300)
+		}
+	})
+
+	$(".quesion-item__close").on('click', function(){
+		var btn = $(this),
+			drop = $(this).closest(".quesion-item").find(".quesion-item__hidden")
+
+		$(this).closest(".quesion-item").removeClass('active')
+		drop.hide(300)
+		return false;
+	})
+
+		$('.s1-down').click(function(){
+		var el = $(this).attr('href');
+		$('body, html').animate({
+			scrollTop: $(el).offset().top }, 800);
+		return false; 
+>>>>>>> Adj march
 	});
 })
