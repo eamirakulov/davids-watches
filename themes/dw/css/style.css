@@ -1111,7 +1111,7 @@ body{
 }
 
 .product{
-	margin-bottom: 200px;
+	margin-bottom: 200px !important;
 }
 
 .product-item__link{

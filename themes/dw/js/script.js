@@ -157,43 +157,19 @@ $(function(){
 
 		if(btn.hasClass('active')){
 			btn.removeClass('active')
-			drop.stop(true,true).slideUp(300)
+			drop.stop(true,true).slideUp(200)
 		}else{
 			btn.addClass('active')
-			drop.stop(true,true).slideDown(300)
+			drop.stop(true,true).slideDown(200)
 		}
 	})
 
-<<<<<<< HEAD
-	new WOW().init();
-
-=======
->>>>>>> Adj march
 	$(".product-search-filter-terms-heading").on('click', function(){
 		var btn = $(this),
 			drop = btn.closest(".product-search-filter-terms").find(".selectize-control");
 
 		if(btn.hasClass('active')){
 			btn.removeClass('active')
-<<<<<<< HEAD
-			drop.removeClass('active')
-		}else{
-			btn.addClass('active')
-			drop.addClass('active')
-		}
-	})
-
-	$(document).mouseup(function (e){
-		var block = $(".selectize-control");
-		if($(window).width() > 1050){
-			if (!block.is(e.target)
-				&& block.has(e.target).length === 0) {
-				block.removeClass('active')
-				$(".product-search-filter-terms-heading").removeClass('active')
-			}
-		}
-		
-=======
 			drop.stop(true,true).slideUp(200)
 		}else{
 			btn.addClass('active')
@@ -227,6 +203,5 @@ $(function(){
 		$('body, html').animate({
 			scrollTop: $(el).offset().top }, 800);
 		return false; 
->>>>>>> Adj march
 	});
 })
