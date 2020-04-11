@@ -48,13 +48,13 @@ if ( post_password_required() ) {
 					</ul>
 				</div>
 				<div class="product-modal__desc">
-					<div class="product-modal__title">
+					<div class="product-modal__title text-center">
 						<?php echo the_title(); ?>
 					</div>
-					<div class="product-modal__price">
+					<div class="product-modal__price text-center">
 						$<?php echo $product->get_price(); ?>
 					</div>
-					<div class="product-modal__btn">
+					<div class="product-modal__btn text-center">
 						<?php 
 							echo apply_filters( 'woocommerce_loop_add_to_cart_link', // WPCS: XSS ok.
 								sprintf( '<a href="%s" data-quantity="%s" class="button4" %s>buy now</a>',

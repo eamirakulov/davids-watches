@@ -16,33 +16,22 @@
 	</section>
 	<footer class="footer">
 		<div class="container">
-			<div class="row clearfix">
+			<div class="footer-row">
 				<div class="col-3">
 					<div class="f-logo">
 						<a href="#">David's Watches</a>
-					</div>
-					<div class="h-soc clearfix">
-						<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/fb-icon.png" alt=""></a>
-						<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/inst-icon.png" alt=""></a>
 					</div>
 					<div class="copy">
 						© 2018 David's Watches
 					</div>
 				</div>
-				<div class="col-3">
-					<ul class="footer-menu">
-						<li><a href="#">Home page</a></li>
-						<li><a href="#">Buy a Rolex</a></li>
-						<li><a href="#">Sell a Rolex</a></li>
-					</ul>
-				</div>
-				<div class="col-3">
-					<ul class="footer-menu">
-						<li><a href="#">About</a></li>
-						<li><a href="#">Buying & Shipping</a></li>
-						<li><a href="#">FAQ</a></li>
-					</ul>
-				</div>
+				<ul class="footer-menu">
+					<li><a href="<?php bloginfo('url'); ?>">Home page</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/buy-a-rolex/">Buy a Rolex</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/about">About</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/buying-shipping/">Buying & Shipping</a></li>
+					<li><a href="<?php bloginfo('url'); ?>">FAQ</a></li>
+				</ul>
 			</div>
 		</div>
 	</footer>

@@ -24,6 +24,7 @@
 	<a href="<?php bloginfo('url'); ?>/cart" class="cart">
 		<i><?php echo WC()->cart->get_cart_contents_count(); ?></i>
 	</a>
+	<a href="https://wa.me/996700396117" target="_blank" class="wa-fixed"></a>
 	<?php if(is_page('home') || isset( $wp_query ) && (bool) $wp_query->is_posts_page) : ?>
 	<section class="section1">
 		<header class="header">

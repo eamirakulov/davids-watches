@@ -40,8 +40,7 @@
 			<p><span>E-mail:</span> davids.watches@gmail.com</p>
 			<p><span>Loft Pineapple, 22 Pink Street, New York</span></p>
 			<div class="h-soc">
-				<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/fb-icon2.png" alt=""></a>
-				<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/inst-icon2.png" alt=""></a>
+				<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/inst-icon3.png" alt=""></a>
 			</div>
 		</div>
 	</div>

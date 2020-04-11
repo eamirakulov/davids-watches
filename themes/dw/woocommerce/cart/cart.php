@@ -23,12 +23,24 @@ defined( 'ABSPATH' ) || exit;
 
 		<div class="container">
 			<?php do_action( 'woocommerce_before_cart' ); ?>
-			<h3>DAVID'S WATCHES</h3>
+
+			<h3>YOUR CART</h3>
 			<div class="checkout">
-				<div class="modal-title">
-				Ваш заказ:
-				</div>
-				<div class="modal-cart">
+				<table class="checkout-table">
+					<thead>
+						<tr>
+							<td>
+								Product
+							</td>
+							<td>
+								Quantity
+							</td>
+							<td>
+								Price
+							</td>
+						</tr>
+					</thead>
+					<tbody>
 
 			<?php
 			foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
@@ -38,67 +50,40 @@ defined( 'ABSPATH' ) || exit;
 				if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
 					$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
 					?>
-					<div class="modal-cart__row">
-						<div class="flex-row">
-							<div class="modal-cart__img" style="background-image: url(<?php echo get_the_post_thumbnail_url($product_id);?>
-);">
-							</div>
-							<div class="modal-cart__title">
-								<?php echo $_product->get_name(); ?>
-							</div>
-						</div>
-						<div class="flex-row">
-							<div class="modal-cart__cout">
-								<div class="spinner">
-									<?php
-										if ( $_product->is_sold_individually() ) {
-											$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
-										} else {
-											$product_quantity = woocommerce_quantity_input(
-												array(
-													'input_name'   => "cart[{$cart_item_key}][qty]",
-													'input_value'  => $cart_item['quantity'],
-													'max_value'    => $_product->get_max_purchase_quantity(),
-													'min_value'    => '0',
-													'product_name' => $_product->get_name(),
-												),
-												$_product,
-												false
-											);
-										}
-
-										echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok.
-										?>
+					<tr>
+						<td>
+							<a href="#" class="modal-cart__remove"></a>
+							<div class="flex-row">
+								<div class="modal-cart__img" style="background-image: url(<?php echo get_the_post_thumbnail_url($product_id);?>);"></div>
+										<div class="modal-cart__title">
+									<?php echo $_product->get_name(); ?>
 								</div>
 							</div>
+						</td>
+						<td>
+							<div class="modal-cart__cout">
+								<?php echo $cart_item['quantity']; ?>
+							</div>
+						</td>
+						<td>
 							<div class="modal-cart__price"><?php
 								echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
-							?>
-							</div>
-							<?php
-								echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-									'woocommerce_cart_item_remove_link',
-									sprintf(
-										'<a href="%s" class="modal-cart__remove remove" aria-label="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
-										esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
-										esc_html__( 'Remove this item', 'woocommerce' ),
-										esc_attr( $product_id ),
-										esc_attr( $_product->get_sku() )
-									),
-									$cart_item_key
-								);
-							?>
-						</div>
-					</div>
+							?></div>
+						</td>
+					</tr>
 					<?php
 				}
 			}
 			?>
+					</tbody>
+				</table>
+				<div class="checkout-total">
+					Subtotal
+					<span><?php  global $woocommerce;
+					echo $woocommerce->cart->get_cart_total(); ?></span>
 				</div>
-				<div class="modal-cart__total">
-					Total: <?php  global $woocommerce;
-					echo $woocommerce->cart->get_cart_total(); ?>
-					<div class=""><a href="<?php bloginfo('url'); ?>/checkout">Proceed to checkout</a></div>
+				<div class="checkout-btn">
+					<a href="<?php bloginfo('url'); ?>/checkout" class="button">checkout</a>
 				</div>
 				<table style="display: none;">
 					<tr>

@@ -1,5 +1,5 @@
 $(function(){
-	
+	$('.section1').parallax({imageSrc: "images/MainRollex_2.jpg"});
 	$(".reviews-slider").owlCarousel({
 		loop:true,
 		items:1,

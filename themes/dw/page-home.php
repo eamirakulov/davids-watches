@@ -39,7 +39,7 @@
 				</div>
 			</div>
 			<div class="catalog-load">
-				<a href="#">Load next 6-12 watches</a>
+				<!--a href="#">Load next 6-12 watches</a-->
 			</div>
 			<div class="s2-btn">
 				<a href="<?php bloginfo('url'); ?>/shop" class="button2">Show all watches</a>
@@ -129,7 +129,7 @@
 			<div class="quesion-list">
 				<div class="quesion-item">
 					<div class="quesion-item__wrapp">
-						<a href="#" class="quesion-item__close"></a>
+						
 						Так, а что я могу найти тут ?
 						<div class="quesion-item__hidden">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti beatae nemo ipsam nisi optio illo perspiciatis reprehenderit nulla, quis numquam illum autem fuga rem alias at vel laudantium blanditiis ut temporibus similique a excepturi consequatur. Voluptatibus ducimus maiores fugiat eum commodi, assumenda sint nobis voluptas libero repellat, facere velit, ipsum? <br>
@@ -139,7 +139,7 @@
 				</div>
 				<div class="quesion-item">
 					<div class="quesion-item__wrapp">
-						<a href="#" class="quesion-item__close"></a>
+						
 						Ну скажем, ответы на самые популярные вопросы
 						<div class="quesion-item__hidden">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti beatae nemo ipsam nisi optio illo perspiciatis reprehenderit nulla, quis numquam illum autem fuga rem alias at vel laudantium blanditiis ut temporibus similique a excepturi consequatur. Voluptatibus ducimus maiores fugiat eum commodi, assumenda sint nobis voluptas libero repellat, facere velit, ipsum? <br>
@@ -149,7 +149,7 @@
 				</div>
 				<div class="quesion-item">
 					<div class="quesion-item__wrapp">
-						<a href="#" class="quesion-item__close"></a>
+						
 						how can I be sure that the watch is not fake?
 						<div class="quesion-item__hidden">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam eveniet modi, inventore praesentium reiciendis, corrupti ullam libero perspiciatis fuga nihil veritatis dicta facere nulla magni ut quas qui provident incidunt fugiat! Natus reiciendis veritatis hic, quam incidunt laborum! Vel aspernatur qui porro voluptates. Enim perspiciatis impedit, ea quaerat minus ex. <br>
@@ -159,7 +159,7 @@
 				</div>
 				<div class="quesion-item">
 					<div class="quesion-item__wrapp">
-						<a href="#" class="quesion-item__close"></a>
+						
 						We are professionals in our field and for more than 10 years we have been buying up luxury watches. You can read the article on our blog on how to distinguish the original from the fake
 						<div class="quesion-item__hidden">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic vitae voluptatibus minus inventore commodi! Doloremque eius ut quas id neque eaque optio, quibusdam. Quasi sequi alias labore aspernatur, expedita hic enim, nulla ullam obcaecati doloribus numquam facilis provident libero optio placeat nihil quos ad at, natus. Perspiciatis consequatur, natus maiores. <br>
@@ -169,7 +169,7 @@
 				</div>
 				<div class="quesion-item">
 					<div class="quesion-item__wrapp">
-						<a href="#" class="quesion-item__close"></a>
+						
 						А где я могу найти более подробную информацию ?
 						<div class="quesion-item__hidden">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolores animi praesentium, est dolor culpa voluptate fugiat, rerum ut laborum sint, temporibus eligendi fuga dolorem saepe neque odit dicta debitis excepturi commodi iste. Eum impedit, dignissimos eius voluptatem blanditiis, reprehenderit quibusdam! Eveniet neque unde enim hic itaque, ipsam minima fugit. <br>
@@ -177,18 +177,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="quesion-item">
-					<div class="quesion-item__wrapp last">
-						Write to us in Whatsapp and I will personally answer you and help with any questions
-						<a href="https://wa.me/996700396117" target="_blank" class="wa-btn">Write in WhatsApp</a>
-					</div>
-				</div>
 			</div>
 		</div>
 	</section>
 	<style type="text/css">
-		.section5,
-		footer {
+		.section5 {
 			display: none;
 		}
 	</style>
